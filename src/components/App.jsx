@@ -19,7 +19,7 @@ const useLocalStorage = (key, defaultValue) => {
 
 export function App() {
   const [filter, setFilter] = useState('');
-  const [contacts, setContacts] = useLocalStorage('contacts', '');
+  const [contacts, setContacts] = useLocalStorage('contacts', []);
 
   const formSubmit = data => {
     const contact = {
